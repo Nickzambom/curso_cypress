@@ -10,12 +10,12 @@ describe('template spec', () => {
     //cy.get('input[id="email"]').should('be.visible').type("nicholas@gmail.com");
     //validar campo de email
     cy.get('input[id="email"]').should('be.visible');
-    cy.get('input[id="email"]').type("nicholas@gmail.com");
+    cy.get('input[id="email"]').type("nicholasnkzambom@gmail.com");
     //validar campo senha e confirme senha
     cy.get('input[id="pass-create"]').should('be.visible');
-    cy.get('input[id="pass-create"]').type("123456Mudar");
+    cy.get('input[id="pass-create"]').type("NicholasNIC@12");
     cy.get('input[id="pass-confirm"]').should('be.visible')
-    cy.get('input[id="pass-confirm"]').type("123456Mudar");
+    cy.get('input[id="pass-confirm"]').type("NicholasNIC@12");
 
     //validar botão de cadastrar
     cy.contains('button','Cadastrar').click();

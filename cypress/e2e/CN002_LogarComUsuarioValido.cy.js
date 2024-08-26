@@ -1,4 +1,4 @@
-describe('Realizar Login com usuario valido', ()=> {
+describe('Realizar Login com usuario valido e clicar em falar', ()=> {
     it('logar',() =>{
         //iniciar teste - adopet
         cy.visit('https://adopet-frontend-cypress.vercel.app/');
@@ -12,5 +12,12 @@ describe('Realizar Login com usuario valido', ()=> {
         cy.get('input[id="pass"').type("NicholasNIC@12");
         //clicar no botão de entrar
         cy.contains('button','Entrar').click();
+        //validar pagina de login icon de email e home (header esta visivel
+        cy.get('.header__user').should('be.visible');
+        //validar falar com responsavel - adopet
+        cy.get(':nth-child(1) > .card__contact').should('be.visible');
+        cy.get(':nth-child(1) > .card__contact').click();
+        //validar texto de falar com responsavel
+        cy.get('section[class="message"]').should('be.visible');
     })
 })

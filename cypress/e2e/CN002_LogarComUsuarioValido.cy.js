@@ -1,5 +1,5 @@
 describe('Realizar Login com usuario valido e clicar em falar', ()=> {
-    it('logar',() =>{
+    it('realizar login e validar home',() =>{
         //iniciar teste - adopet
         cy.visit('https://adopet-frontend-cypress.vercel.app/');
         //

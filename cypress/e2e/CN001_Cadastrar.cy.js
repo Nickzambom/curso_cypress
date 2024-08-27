@@ -1,9 +1,9 @@
-describe('template spec', () => {
-  it('passes', () => {
+describe('cadastro', () => {
+  it('realizar cadastro com dados válidos', () => {
     //iniciar 
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     //
-    cy.contains('a','Cadastrar').click();
+    cy.get('[data-test="register-button"]').click();
     //validar campo name
     cy.get('input[name="nome"]').should('be.visible');
     cy.get('input[name="nome"]').type("Nicholas Luiz");

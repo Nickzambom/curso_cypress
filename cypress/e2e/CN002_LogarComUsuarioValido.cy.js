@@ -1,9 +1,12 @@
 describe('Realizar Login com usuario valido e clicar em falar', ()=> {
-    it('realizar login e validar home',() =>{
+    beforeEach(()=> {
         //iniciar teste - adopet
         cy.visit('https://adopet-frontend-cypress.vercel.app/');
-        //
+        //validar campo de login
         cy.contains('a','Fazer login').click();
+    })
+
+    it('realizar login e validar home',() =>{
         //validar campo de login
         cy.get('input[id="email"').should('be.visible');
         cy.get('input[id="email"').type("nicholasnkzambom@gmail.com");

@@ -1,8 +1,10 @@
 describe('cadastro incorreto', () => {
+  beforeEach(()=> {
+    //iniciar teste - adopet
+    cy.visit('https://adopet-frontend-cypress.vercel.app/');
+})
     it('realizar cadastro com dados invalidos', () => {
-      //iniciar 
-      cy.visit('https://adopet-frontend-cypress.vercel.app/');
-      //
+
       cy.get('[data-test="register-button"]').click();
       //validar botão de cadastrar e clicar
       cy.contains('button','Cadastrar').click();

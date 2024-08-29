@@ -1,8 +1,10 @@
 describe('cadastro', () => {
-  it('realizar cadastro com dados válidos', () => {
-    //iniciar 
+  beforeEach(()=> {
+    //iniciar teste - adopet
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
-    //
+})
+
+  it('realizar cadastro com dados válidos', () => {
     cy.get('[data-test="register-button"]').click();
     //validar campo name
     cy.get('input[name="nome"]').should('be.visible');

@@ -1,5 +1,4 @@
 Cypress.Commands.add('login',(email,password)=>{ 
-cy.contains('a','Fazer login').click();      
 cy.get('input[id="email"').should('be.visible');
 cy.get('input[id="email"').type(email);
 //validar campo de senha
@@ -12,7 +11,7 @@ cy.contains('button','Entrar').click();
 Cypress.Commands.add('cadastrar',(nome, email, senha) =>{
     cy.get('[data-test="register-button"]').click();
     //validar campo name
-    cy.get('input[name="nome"]').should('be.visible');
+    cy.get('input[name="nome"]').should(' be.visible');
     cy.get('input[name="nome"]').type("Nicholas Luiz");
     //cy.get('input[id="email"]').should('be.visible').type("nicholas@gmail.com");
     //validar campo de email

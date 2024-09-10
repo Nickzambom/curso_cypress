@@ -11,17 +11,17 @@ cy.contains('button','Entrar').click();
 Cypress.Commands.add('cadastrar',(nome, email, senha) =>{
     cy.get('[data-test="register-button"]').click();
     //validar campo name
-    cy.get('input[name="nome"]').should(' be.visible');
-    cy.get('input[name="nome"]').type("Nicholas Luiz");
+    cy.get('[data-test="input-name"]').should(' be.visible');
+    cy.get('[data-test="input-name"]').type(nome);
     //cy.get('input[id="email"]').should('be.visible').type("nicholas@gmail.com");
     //validar campo de email
-    cy.get('input[id="email"]').should('be.visible');
-    cy.get('input[id="email"]').type("nicholasnkzambom@gmail.com");
+    cy.get('[data-test="input-email"]').should('be.visible');
+    cy.get('[data-test="input-email"]').type(email);
     //validar campo senha e confirme senha
-    cy.get('input[id="pass-create"]').should('be.visible');
-    cy.get('input[id="pass-create"]').type("NicholasNIC@12");
-    cy.get('input[id="pass-confirm"]').should('be.visible')
-    cy.get('input[id="pass-confirm"]').type("NicholasNIC@12");
+    cy.get('[data-test="input-password"]').should('be.visible');
+    cy.get('[data-test="input-password"]').type(senha);
+    cy.get('[data-test="input-confirm-password"]').should('be.visible')
+    cy.get('[data-test="input-confirm-password"]').type(senha);
 
 })
 

@@ -1,0 +1,59 @@
+{
+    "usuarios": [
+        {
+            "name": "João Vitor",
+            "email":"joaovitor@gmail.com",
+            "password": "123456Massa@"
+        },
+        {
+            "name": "Maicon Douglas",
+            "email":"maiconDouglas@gmail.com",
+            "password": "123456Massa@"
+        },
+        {
+            "name": "Lasco Maco",
+            "email":"lascoMaco@gmail.com",
+            "password": "123456Massa@"
+        },
+        {
+            "name": "Jaime Jaime",
+            "email":"jaimejaime@gmail.com",
+            "password": "123456Massa@"
+        },
+        {
+            "name": "Pericles Azevedo",
+            "email":"periclesazevedo@gmail.com",
+            "password": "123456Massa@"
+        },
+        {
+            "name": "Jair Mendes",
+            "email":"jairmendes@gmail.com",
+            "password": "123456Massa@"
+        },
+        {
+            "name": "Mauricio Palmeiras",
+            "email":"mauriciopalmeiras@gmail.com",
+            "password": "123456Massa@"
+        },
+        {
+            "name": "Mayke Rodrigues",
+            "email":"maykerodrigues@gmail.com",
+            "password": "123456Massa@"
+        },
+        {
+            "name": "Gustavo Gomez",
+            "email":"gustavogomez@gmail.com",
+            "password": "123456Massa@"
+        },
+        {
+            "name": "Eduardo Pereira",
+            "email":"eduardopereira@gmail.com",
+            "password": "123456Massa@"
+        },
+        {
+            "name": "Joaquín Piquerez",
+            "email":"joaquinpiquerez@gmail.com",
+            "password": "123456Massa@"
+        }
+    ]
+}

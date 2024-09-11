@@ -1,4 +1,5 @@
 describe('api adopet',()=>{
+    const tempoEsperado = Math.random() * 1000;
     const authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYjk0Y2E3My0xN2RiLTQ2YTQtODQ0Yi1kZjBjZWJjNDc1MmQiLCJhZG9wdGVyTmFtZSI6Ik5pY2hvbGFzIEx1aXoiLCJpYXQiOjE3MjU5MTY0MDYsImV4cCI6MTcyNjE3NTYwNn0.zAisr0rwsxiKl4FXsU2cARGpxMFMKz2Rk4-yjniMO5M`
 
     it('Mensagens da api ',()=> {
@@ -11,6 +12,8 @@ describe('api adopet',()=>{
                 expect(res.status).to.be.equal(200)
                 expect(res.body).is.not.empty
                 expect(res.body).to.have.property('msg')
+                //esperar o que o tempo esperado seja inferior ao tempo da var
+                expect(res.duration).to.be.lte(tempoEsperado);
             })
     })
 })
